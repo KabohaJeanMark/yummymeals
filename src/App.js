@@ -1,9 +1,7 @@
-function App() {
-  return (
-    <div>
-      Yummy Meals
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    Yummy Meals
+  </div>
+);
 
 export default App;
