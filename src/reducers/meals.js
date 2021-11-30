@@ -3,6 +3,7 @@ import { GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR } from '../actions';
 const initialState = {
   meals: [],
   error: '',
+  isLoading: false,
 };
 
 const mealsReducer = (state = initialState, action) => {
@@ -10,16 +11,19 @@ const mealsReducer = (state = initialState, action) => {
     case GET_MEALS:
       return {
         ...state,
+        isLoading: true,
       };
     case GET_MEALS_SUCCESS:
       return {
         ...state,
         meals: action.meal,
+        isLoading: false,
       };
     case GET_MEALS_ERROR:
       return {
         ...state,
         error: action.error,
+        isLoading: false,
       };
     default:
       return state;
