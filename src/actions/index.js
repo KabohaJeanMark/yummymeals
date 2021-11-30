@@ -11,12 +11,12 @@ const getMeals = () => ({
 
 const getMealsSuccess = (meal) => ({
   type: GET_MEALS_SUCCESS,
-  meal,
+  payload: meal,
 });
 
 const getMealsError = (error) => ({
   type: GET_MEALS_ERROR,
-  error,
+  payload: error,
 });
 
 const getMealDetails = (id) => ({

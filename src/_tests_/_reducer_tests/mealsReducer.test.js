@@ -1,4 +1,4 @@
-import { GET_MEALS, GET_MEALS_SUCCESS } from '../../actions';
+import { GET_MEALS, GET_MEALS_ERROR } from '../../actions';
 import mealsReducer from '../../reducers/meals';
 
 const initialState = {
@@ -16,6 +16,22 @@ describe('test mealsReducer', () => {
     expect(mealsReducer(initialState, { type: GET_MEALS })).toEqual({
       ...initialState,
       isLoading: true,
+    });
+  });
+
+  it('should handle API fetch request error', () => {
+    const response = {
+      error: "404 Error couldn't fetch",
+    };
+
+    const erroredAction = {
+      type: GET_MEALS_ERROR,
+      payload: response.error,
+    };
+
+    expect(mealsReducer(initialState, erroredAction)).toEqual({
+      ...initialState,
+      error: erroredAction.payload,
     });
   });
 });

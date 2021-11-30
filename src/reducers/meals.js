@@ -16,13 +16,13 @@ const mealsReducer = (state = initialState, action) => {
     case GET_MEALS_SUCCESS:
       return {
         ...state,
-        meals: action.meal,
+        meals: action.payload,
         isLoading: false,
       };
     case GET_MEALS_ERROR:
       return {
         ...state,
-        error: action.error,
+        error: action.payload,
         isLoading: false,
       };
     default:
