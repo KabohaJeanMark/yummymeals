@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './index.css';
-import App from './components/App';
+import RouteSwitch from './components/Routes';
 import store from './reducers';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <RouteSwitch />
   </Provider>,
   document.getElementById('root'),
 );
