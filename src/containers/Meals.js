@@ -23,7 +23,17 @@ const MealsContainer = () => {
         <option value="Dessert">Dessert</option>
         <option value="Vegan">Vegan</option>
         <option value="Chicken">Chicken</option>
+        <option value="Side">Side</option>
+        <option value="Pasta">Pasta</option>
       </select>
+      <div>
+        {meals && meals.map((meal) => (
+          <div key={meal.idMeal}>
+            <img src={meal.strMealThumb} alt={meal.strMeal} />
+            <h3>{meal.strMeal}</h3>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
