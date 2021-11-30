@@ -19,9 +19,6 @@ const MealsContainer = () => {
 
   return (
     <>
-      <div>
-        <Link to="/">yummyMeals</Link>
-      </div>
       <select name="category" id="category" placeholder="Food category" onChange={(e) => setCategory(e.target.value)}>
         <option value="Breakfast">Breakfast</option>
         <option value="Dessert">Dessert</option>
