@@ -1,4 +1,4 @@
-import { GET_MEALS, GET_MEALS_ERROR } from '../../actions';
+import { GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR } from '../../actions';
 import mealsReducer from '../../reducers/meals';
 
 const initialState = {
@@ -16,6 +16,24 @@ describe('test mealsReducer', () => {
     expect(mealsReducer(initialState, { type: GET_MEALS })).toEqual({
       ...initialState,
       isLoading: true,
+    });
+  });
+
+  it('should handle successful API fetch request', () => {
+    const response = {
+      meals: [
+        { strMeal: 'Mbuzi Choma (Roasted Goat)' },
+      ],
+    };
+
+    const correctAction = {
+      type: GET_MEALS_SUCCESS,
+      payload: response.meals,
+    };
+
+    expect(mealsReducer(initialState, correctAction)).toEqual({
+      ...initialState,
+      meals: correctAction.payload,
     });
   });
 
