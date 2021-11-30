@@ -39,3 +39,17 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 0.5rem;
 } 
+
+.mealDetails {
+  display: flex;
+}
+
+.imgDiv {
+  width: 80%;
+}
+
+.mealImg {
+  width: 300px;
+  height: auto;
+  margin: 1rem;
+}

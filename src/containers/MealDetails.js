@@ -14,18 +14,22 @@ const MealDetailComponent = () => {
   });
 
   return (
-    <>
+    <div className="container">
       {mealDetails !== undefined && mealDetails.meals
             && (
             <>
               <h2>{mealDetails.meals[0].strMeal}</h2>
-
-              <img src={mealDetails.meals[0].strMealThumb} alt={mealDetails.meals[0].strMeal} />
-
-              <p>{mealDetails.meals[0].strInstructions}</p>
+              <div className="mealDetails">
+                <div className="imgDiv">
+                  <img className="mealImg" src={mealDetails.meals[0].strMealThumb} alt={mealDetails.meals[0].strMeal} />
+                </div>
+                <>
+                  <p>{mealDetails.meals[0].strInstructions}</p>
+                </>
+              </div>
             </>
             )}
-    </>
+    </div>
   );
 };
 
