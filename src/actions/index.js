@@ -42,7 +42,7 @@ const fetchSearchMeal = (name) => (dispatch) => {
 };
 
 export {
-  GET_MEALS, GET_MEALS_SUCCESS,
-  GET_MEALS_ERROR, getMeals, getMealsSuccess, getMealsError,
+  GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR, SEARCH_MEAL,
+  getMeals, getMealsSuccess, getMealsError,
   fetchCategoryMeals, fetchSearchMeal,
 };
