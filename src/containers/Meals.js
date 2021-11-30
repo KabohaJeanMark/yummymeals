@@ -3,8 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchCategoryMeals } from '../actions';
 
 const MealsContainer = () => {
-  const meals = useSelector((state) => state.meals.meals);
-  console.log(meals);
+  const meals = useSelector((state) => state.meals);
   const [category, setCategory] = useState('Breakfast');
 
   const dispatch = useDispatch();

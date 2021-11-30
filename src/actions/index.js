@@ -3,7 +3,6 @@ import axios from 'axios';
 const GET_MEALS = 'GET_MEALS';
 const GET_MEALS_SUCCESS = 'GET_MEALS_SUCCESS';
 const GET_MEALS_ERROR = 'GET_MEALS_ERROR';
-const SEARCH_MEAL = 'SEARCH_MEAL';
 
 const getMeals = () => ({
   type: GET_MEALS,
@@ -19,11 +18,6 @@ const getMealsError = (error) => ({
   error,
 });
 
-const searchMeal = (searchResult) => ({
-  type: SEARCH_MEAL,
-  searchResult,
-});
-
 const fetchCategoryMeals = (category) => (dispatch) => {
   dispatch(getMeals);
   const url = `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`;
@@ -33,16 +27,8 @@ const fetchCategoryMeals = (category) => (dispatch) => {
     .catch((error) => dispatch(getMealsError(error.message)));
 };
 
-const fetchSearchMeal = (name) => (dispatch) => {
-  dispatch(getMeals);
-  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`;
-  axios.get(url)
-    .then((response) => dispatch(searchMeal(response.data)))
-    .catch((error) => dispatch(getMealsError(error.message)));
-};
-
 export {
-  GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR, SEARCH_MEAL,
+  GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR,
   getMeals, getMealsSuccess, getMealsError,
-  fetchCategoryMeals, fetchSearchMeal,
+  fetchCategoryMeals,
 };
