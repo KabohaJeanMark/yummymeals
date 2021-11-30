@@ -1,7 +1,6 @@
 import { GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR } from '../actions';
 
 const initialState = {
-  loading: false,
   meals: [],
   error: '',
 };
@@ -11,7 +10,6 @@ const mealsReducer = (state = initialState, action) => {
     case GET_MEALS:
       return {
         ...state,
-        loading: true,
       };
     case GET_MEALS_SUCCESS:
       return {
