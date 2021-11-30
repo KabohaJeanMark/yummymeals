@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { fetchCategoryMeals } from '../actions';
 
 const MealsContainer = () => {
-  const meals = useSelector((state) => state.meals);
+  const meals = useSelector((state) => state.meals.meals);
   const [category, setCategory] = useState('Breakfast');
 
   const dispatch = useDispatch();

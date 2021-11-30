@@ -1,4 +1,4 @@
-import GET_MEAL_DETAILS from '../actions';
+import { GET_MEAL_DETAILS } from '../actions';
 
 const initialState = {
 

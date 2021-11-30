@@ -43,7 +43,7 @@ const fetchMealDetails = (id) => (dispatch) => {
 };
 
 export {
-  GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR,
+  GET_MEALS, GET_MEALS_SUCCESS, GET_MEALS_ERROR, GET_MEAL_DETAILS,
   getMeals, getMealsSuccess, getMealsError, getMealDetails,
   fetchCategoryMeals, fetchMealDetails,
 };
