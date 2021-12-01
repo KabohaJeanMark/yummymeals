@@ -15,6 +15,11 @@ All pages have a single rote within the SPA.
 ## Live Demo
 [Netlify link](https://cranky-meninsky-ed52f3.netlify.app/)
 
+## Video Demos
+[App Walkthrough](https://www.loom.com/share/b887d0fc8efc4e21ac24e8f93fd5a749)
+
+[React, Virtual DOM, Redux, One way data flow explained](https://www.loom.com/share/d1cf55e119994b5086d622ab96b3651a)
+
 ## Built With
 
 - HTML5, CSS3, & JavaScript
