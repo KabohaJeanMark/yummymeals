@@ -1,7 +1,6 @@
 import { GET_MEAL_DETAILS } from '../actions';
 
 const initialState = {
-
   mealDetails: [],
 };
 
@@ -10,7 +9,7 @@ const mealDetailsReducer = (state = initialState, action) => {
     case GET_MEAL_DETAILS:
       return {
         ...state,
-        mealDetails: action.id,
+        mealDetails: action.payload,
       };
     default:
       return state;

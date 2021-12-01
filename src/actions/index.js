@@ -21,7 +21,7 @@ const getMealsError = (error) => ({
 
 const getMealDetails = (id) => ({
   type: GET_MEAL_DETAILS,
-  id,
+  payload: id,
 });
 
 const fetchCategoryMeals = (category) => (dispatch) => {
