@@ -74,6 +74,14 @@ nav a:hover {
   .mealsContainer {
     grid-template-columns: 1fr 1fr;
   }
+
+  .mealDetails {
+    flex-direction: column;
+  }
+
+  .mealImg {
+    width: 100%;
+  }
 }
 
 /*
