@@ -23,9 +23,11 @@ const MealDetailComponent = () => {
                 <div className="imgDiv">
                   <img className="mealImg" src={mealDetails.meals[0].strMealThumb} alt={mealDetails.meals[0].strMeal} />
                 </div>
-                <>
+                <div>
+                  <h2 className="mt-2">RECIPE</h2>
+                  <a href={mealDetails.meals[0].strYoutube} target="_blank" rel="noreferrer">YouTube Demo Video Walkthrough</a>
                   <p>{mealDetails.meals[0].strInstructions}</p>
-                </>
+                </div>
               </div>
             </>
             )}

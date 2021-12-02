@@ -78,8 +78,9 @@ You can easily filter meals depending on categories and add click on their recip
 ![categories](src/assets/categories.png)
 
 By clicking on the recipe, you link to a details page with an explanation of how to create that meal.
+There is also a link to a YouTube video explaining how to prepare the meal with a demo walkthrough.
 
-![details](src/assets/details.png)
+![details](src/assets/mealdetails.png)
 
 ## Author
 
