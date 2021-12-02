@@ -25,4 +25,14 @@ describe('test mealsDetailsReducer', () => {
       mealDetails: correctAction.payload,
     });
   });
+
+  it('should return undefined if a meal ID is not passed in the payload', () => {
+    expect(mealDetailsReducer(initialState, {
+      type: GET_MEAL_DETAILS,
+      mealDetails: [],
+    })).toEqual({
+      ...initialState,
+      mealDetails: undefined,
+    });
+  });
 });
