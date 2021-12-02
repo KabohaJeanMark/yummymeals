@@ -20,6 +20,20 @@ All pages have a single rote within the SPA.
 
 [React, Virtual DOM, Redux, One way data flow explained](https://www.loom.com/share/d1cf55e119994b5086d622ab96b3651a)
 
+## Responsive Design
+### Landing Page
+
+| ![screenshot](/src/assets/mobilescreen.png) |![screenshot](/src/assets/tabletscreen.png) | ![screenshot](/src/assets/lgscreens.png) | 
+|:---:|:---:|:---:|
+| Mobile view | Tablet view | Laptop view |
+
+
+### Meal Details Page
+
+| ![screenshot](/src/assets/detailsMobileScreen.png) |![screenshot](/src/assets/detailsTabletScreen.png) | ![screenshot](/src/assets/detailsLaptopScreen.png) | 
+|:---:|:---:|:---:|
+| Mobile view | Tablet view | Laptop view |
+
 ## Built With
 
 - HTML5, CSS3, & JavaScript
