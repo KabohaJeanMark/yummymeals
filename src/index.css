@@ -53,3 +53,37 @@ nav a:hover {
   height: auto;
   margin: 1rem;
 }
+
+/*
+    ==================================================================
+                ****** MEDIA QUERIES LARGE LAPTOPS AND DESKTOPS ******
+    ==================================================================
+*/
+@media only screen and (min-width: 1200px) {
+  .mealsContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*
+    ==============================================
+                ****** MEDIA QUERIES TABLET ******
+    ==============================================
+*/
+@media only screen and (max-width: 768px) {
+  .mealsContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+    ==============================================
+                ****** MEDIA QUERIES MOBILE ******
+    ==============================================
+*/
+
+@media only screen and (max-width: 480px) {
+  .mealsContainer {
+    grid-template-columns: 1fr;
+  }
+}
