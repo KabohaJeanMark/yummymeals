@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchCategoryMeals, fetchMealDetails } from '../actions';
+import CategoryFilter from '../components/CategoryFilter';
 
 const MealsContainer = () => {
   const meals = useSelector((state) => state.meals.meals);
@@ -17,17 +18,14 @@ const MealsContainer = () => {
     dispatch(fetchMealDetails(id));
   };
 
+  const changeFilter = (e) => {
+    setCategory(e.target.value);
+  };
+
   return (
     <div className="container-fluid">
       <p className="mt-2">Please select a food category from the dropdown :)</p>
-      <select className="form-select m-2" aria-label="Default select example" name="category" id="category" placeholder="Food category" onChange={(e) => setCategory(e.target.value)}>
-        <option value="Breakfast">Breakfast</option>
-        <option value="Dessert">Dessert</option>
-        <option value="Vegan">Vegan</option>
-        <option value="Chicken">Chicken</option>
-        <option value="Side">Side</option>
-        <option value="Pasta">Pasta</option>
-      </select>
+      <CategoryFilter handleFilterChange={changeFilter} />
       <div className="mealsContainer">
         {meals && meals.map((meal) => (
           <div key={meal.idMeal} className="card" role="button" tabIndex={0} onClick={() => getMealDetails(meal.idMeal)} onKeyDown={() => getMealDetails(meal.idMeal)}>
