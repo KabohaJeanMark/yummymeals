@@ -55,6 +55,13 @@ By clicking on the recipe, you link to a details page with an explanation of how
 
 In the project directory, you can run:
 
+### `npm install`
+
+npm install downloads a package and it's dependencies.\
+npm install downloads dependencies defined in a package. json file and generates a node_modules folder with the installed modules.
+
+This helps you to install all of the packages required by this application to help it to run. These packages are stored in a folder that has been ignored by the file .gitignore. That is why you do not see the folder node_modules on your computer after cloning this project.
+
 ### `npm start`
 
 Runs the app in the development mode.\
