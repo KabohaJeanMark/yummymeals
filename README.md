@@ -42,14 +42,6 @@ $ cd yourFolder
 $ git clone https://github.com/KabohaJeanMark/yummymeals/
 
 ```
-## How to Use
-You can easily filter meals depending on categories and add click on their recipes to view more of their details.
-
-![categories](src/assets/categories.png)
-
-By clicking on the recipe, you link to a details page with an explanation of how to create that meal.
-
-![details](src/assets/details.png)
 
 ## Available Scripts
 
@@ -69,6 +61,25 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+
+![wactchtests](src/assets/watchtests.png)
+
+Press a to run all tests
+
+![alltests](src/assets/alltests.png)
+
+## How to Use
+You can easily filter meals depending on categories and add click on their recipes to view more of their details.
+
+![categories](src/assets/categories.png)
+
+By clicking on the recipe, you link to a details page with an explanation of how to create that meal.
+
+![details](src/assets/details.png)
 
 ## Author
 
