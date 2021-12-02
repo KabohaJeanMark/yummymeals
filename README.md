@@ -13,7 +13,7 @@ All pages have a single rote within the SPA.
 ![landing](src/assets/landing.png)
 
 ## Live Demo
-[Netlify link](https://cranky-meninsky-ed52f3.netlify.app/)
+[Netlify link](https://angry-ritchie-381479.netlify.app/)
 
 ## Video Demos
 [App Walkthrough](https://www.loom.com/share/b887d0fc8efc4e21ac24e8f93fd5a749)
