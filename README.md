@@ -1,10 +1,72 @@
-# Getting Started with Create React App
+# yummymeals
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A React-Redux yummymeals capstone application that comsumes theMealDB APi and returns categorized information that can easily be sorted through and filtered.
+It provides a catalogue of a variety of meals; Breakfast, Chicken, Vegan, Dessert.
+
+It uses Redux for a single source of truth while doing state management. The redux store keeps the data retrieved from the API.
+
+All pages have a single rote within the SPA.
+
+## Screenshot
+
+![landing](src/assets/landing.png)
+
+## Live Demo
+[Netlify link](https://angry-ritchie-381479.netlify.app/)
+
+## Video Demos
+[App Walkthrough](https://www.loom.com/share/b887d0fc8efc4e21ac24e8f93fd5a749)
+
+[React, Virtual DOM, Redux, One way data flow explained](https://www.loom.com/share/d1cf55e119994b5086d622ab96b3651a)
+
+## Responsive Design
+### Landing Page
+
+| ![screenshot](/src/assets/mobilescreen.png) |![screenshot](/src/assets/tabletscreen.png) | ![screenshot](/src/assets/lgscreens.png) | 
+|:---:|:---:|:---:|
+| Mobile view | Tablet view | Laptop view |
+
+
+### Meal Details Page
+
+| ![screenshot](/src/assets/detailsMobileScreen.png) |![screenshot](/src/assets/detailsTabletScreen.png) | ![screenshot](/src/assets/detailsLaptopScreen.png) | 
+|:---:|:---:|:---:|
+| Mobile view | Tablet view | Laptop view |
+
+## Built With
+
+- HTML5, CSS3, & JavaScript
+- React
+- Redux
+
+## Instructions
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+- Gitbash installed to navigate between the branches.
+- A preferred text editor for example VS Code.
+- A browser such as Google Chrome
+
+## Install
+Clone this [GitHub Repo](https://github.com/KabohaJeanMark/yummymeals/) to your computer on yourFolder by typing these commands in the terminal or download as a Zip file and extract.
+```
+$ mkdir yourFolder
+$ cd yourFolder
+$ git clone https://github.com/KabohaJeanMark/yummymeals/
+
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+npm install downloads a package and it's dependencies.\
+npm install downloads dependencies defined in a package. json file and generates a node_modules folder with the installed modules.
+
+This helps you to install all of the packages required by this application to help it to run. These packages are stored in a folder that has been ignored by the file .gitignore. That is why you do not see the folder node_modules on your computer after cloning this project.
 
 ### `npm start`
 
@@ -17,54 +79,46 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![wactchtests](src/assets/watchtests.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Press a to run all tests
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alltests](src/assets/alltests.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Use
+You can easily filter meals depending on categories and add click on their recipes to view more of their details.
 
-### `npm run eject`
+![categories](src/assets/categories.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+By clicking on the recipe, you link to a details page with an explanation of how to create that meal.
+There is also a link to a YouTube video explaining how to prepare the meal with a demo walkthrough.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![details](src/assets/mealdetails.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Kaboha Jean Mark**
 
-## Learn More
+- GitHub: [@KabohaJeanMark](https://github.com/KabohaJeanMark)
+- Twitter: [@jean_quintus](https://twitter.com/jean_quintus)
+- LinkedIn: [Jean Mark Kaboha](https://www.linkedin.com/in/jean-mark-kaboha-software-engineer/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to check the [issues page](https://github.com/KabohaJeanMark/yummymeals/issues).
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Hat tip to Microverse for the README template, instructions and tutoring for this Capstone project.
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./LICENSE) licensed.
