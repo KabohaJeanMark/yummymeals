@@ -6,7 +6,7 @@ It provides a catalogue of a variety of meals; Breakfast, Chicken, Vegan, Desser
 
 It uses Redux for a single source of truth while doing state management. The redux store keeps the data retrieved from the API.
 
-All pages have a single rote within the SPA.
+All pages have a single route within the SPA.
 
 ## Screenshot
 
@@ -16,9 +16,12 @@ All pages have a single rote within the SPA.
 [Netlify link](https://angry-ritchie-381479.netlify.app/)
 
 ## Video Demos
+YouTube :tv: [Understanding React, Virtual DOM, Redux, State Management & One-way Data Flow](https://www.youtube.com/watch?v=E2rG5Yd_XR0&t=1s&ab_channel=Microverse)
+
 [App Walkthrough](https://www.loom.com/share/b887d0fc8efc4e21ac24e8f93fd5a749)
 
-[React, Virtual DOM, Redux, One way data flow explained](https://www.loom.com/share/d1cf55e119994b5086d622ab96b3651a)
+## Article
+Blog :scroll: [How to: React, Redux, Virtual DOM, State Management & One-way Data Flow](https://www.microverse.org/blog/how-to-react-redux-virtual-dom-state-management-one-way-data-flow)
 
 ## Responsive Design
 ### Landing Page
